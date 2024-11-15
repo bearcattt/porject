@@ -1,10 +1,11 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+import "dreamland";
+import { Route, Router } from "dreamland-router";
+import Home from "./routes/home";
+new Router(
+  (
+  <Route>
+    <Route path="/" show={<Home />} />
+  </Route>
+  ),
+).mount(document.getElementById("root"));
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)

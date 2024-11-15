@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-
+import { dreamlandPlugin } from "vite-plugin-dreamland";
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [dreamlandPlugin(),],
+  
 })
